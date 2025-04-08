@@ -1,17 +1,20 @@
 import { useState } from "react";
 import Lupa from "./assets/lupa.png";
 
-function Input() {
+function SearchInput() {
   const [usuario, setUsuario] = useState("");
 
-  const buscarDados = (value) => {
+  const buscarDados = () => {
     // value é o que foi digitado no input
-    fetch(`https://api.github.com/users/${value}`)
+    fetch(`https://api.github.com/users/${usuario}`)
       // Quando a resposta chegar, converte o conteúdo para JSON
       .then((resposta) => resposta.json())
 
       // Quando os dados forem convertidos, atualiza o estado com os dados recebidos
-      .then((dados) => setUsuario(dados));
+      .then((dados) => {
+        setUsuario(dados);
+        console.log(dados);
+      });
   };
 
   return (
@@ -33,4 +36,4 @@ function Input() {
     </div>
   );
 }
-export default Input;
+export default SearchInput;

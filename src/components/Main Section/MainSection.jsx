@@ -1,7 +1,7 @@
 import LogoGithub from "./assets/logo-github.png";
 import TextoGithub from "./assets/texto-github.png";
-import Input from "../Input/input";
-function Banner() {
+import SearchInput from "../Search Input/SearchInput";
+function MainSection() {
   return (
     <div className="relative flex h-96 w-4xl items-center justify-center bg-[#000000]">
       <div className="items-cente absolute top-5 flex gap-3">
@@ -10,9 +10,9 @@ function Banner() {
         <img src={TextoGithub} alt="github" className="hidden h-11 w-40" />
       </div>
 
-      <Input />
+      <SearchInput />
     </div>
   );
 }
 
-export default Banner;
+export default MainSection;

@@ -1,6 +1,6 @@
 import LogoGithub from "./assets/logo-github.png";
 import TextoGithub from "./assets/texto-github.png";
-import Input from "../../Input/input";
+import Input from "../Input/input";
 function Banner() {
   return (
     <div className="relative flex h-96 w-4xl items-center justify-center bg-[#000000]">

@@ -1,6 +1,6 @@
 function Card({ dados }) {
   return (
-    <div className="flex h-auto w-2xl items-center gap-8 rounded-3xl bg-[#D9D9D9] px-8 py-4">
+    <div className="flex h-auto w-xs items-center gap-4 rounded-3xl bg-[#D9D9D9] px-4 py-2 lg:w-2xl lg:gap-8 lg:px-8 lg:py-4">
       <a
         href={`https://github.com/${dados.login}`}
         target="_blank"
@@ -11,15 +11,15 @@ function Card({ dados }) {
         <img
           src={dados.avatar_url}
           alt="avatar"
-          className="h-52 w-52 rounded-full border-2 border-[#005CFF] transition-transform duration-300 hover:scale-110"
+          className="h-32 w-32 rounded-full border-2 border-[#005CFF] transition-transform duration-300 hover:scale-110 lg:h-52 lg:w-52"
         />
       </a>
 
       <div>
-        <h2 className="text-xl font-bold text-[#005CFF]">
+        <h2 className="text-base font-bold text-[#005CFF] lg:text-xl">
           {dados.name || "Perfil sem nome"}
         </h2>
-        <p className="text-base font-light">
+        <p className="text-xs font-light lg:text-base">
           {dados.bio || "Este perfil não possui uma biografia."}
         </p>
       </div>

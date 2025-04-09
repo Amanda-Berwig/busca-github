@@ -24,13 +24,13 @@ function SearchInput({ setDados, setErro }) {
   };
 
   return (
-    <div className="relative mt-32 mb-8 w-1/2">
+    <div className="relative mt-28 mb-8 w-full lg:mt-32 lg:w-1/2">
       <input
         type="search"
         placeholder="Digite um usuário do Github"
         value={usuario}
         onChange={(e) => setUsuario(e.target.value)}
-        className="w-full rounded-lg bg-[#DDDDDD] p-4 text-xl font-semibold placeholder-[#000000]"
+        className="w-full rounded-lg bg-[#DDDDDD] p-4 text-base font-semibold placeholder-[#000000] lg:text-xl"
       />
       <button onClick={buscarDados}>
         <img

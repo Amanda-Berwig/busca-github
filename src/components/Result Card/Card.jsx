@@ -7,8 +7,12 @@ function Card({ dados }) {
         className="h-52 w-52 rounded-full border-2 border-[#005CFF]"
       />
       <div>
-        <h2 className="text-xl font-bold text-[#005CFF]">{dados.name}</h2>
-        <p className="text-base font-light">{dados.bio}</p>
+        <h2 className="text-xl font-bold text-[#005CFF]">
+          {dados.name || "Perfil sem nome"}
+        </h2>
+        <p className="text-base font-light">
+          {dados.bio || "Este perfil não possui uma biografia."}
+        </p>
       </div>
     </div>
   );

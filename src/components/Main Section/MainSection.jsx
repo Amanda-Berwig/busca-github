@@ -3,10 +3,12 @@ import TextoGithub from "./assets/texto-github.png";
 import SearchInput from "../Search Input/SearchInput";
 import { useState } from "react";
 import Card from "../Result Card/card";
+import ErrorCard from "../ErrorCard/ErrorCard";
 import classNames from "classnames";
 
 function MainSection() {
   const [dados, setDados] = useState({});
+  const [erro, setErro] = useState(false);
 
   return (
     <div className="relative flex h-[500px] w-3xl flex-col items-center bg-[#000000]">
@@ -17,14 +19,15 @@ function MainSection() {
           src={TextoGithub}
           alt="github"
           className={classNames("h-11 w-40 transition-opacity duration-500", {
-            block: dados.name,
-            hidden: !dados.name,
+            block: dados.login,
+            hidden: !dados.login,
           })}
         />
       </div>
 
-      <SearchInput setDados={setDados} />
-      {dados.name && <Card dados={dados} />}
+      <SearchInput setDados={setDados} setErro={setErro} />
+      {dados.login && <Card dados={dados} />}
+      {erro && <ErrorCard />}
     </div>
   );
 }

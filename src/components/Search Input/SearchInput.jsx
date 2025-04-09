@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Lupa from "./assets/lupa.png";
 
-function SearchInput({ setDados }) {
+function SearchInput({ setDados, setErro }) {
   const [usuario, setUsuario] = useState("");
 
   const buscarDados = () => {
@@ -12,8 +12,14 @@ function SearchInput({ setDados }) {
 
       // Quando os dados forem convertidos, atualiza o estado com os dados recebidos
       .then((dados) => {
-        setDados(dados);
-        console.log(dados);
+        if (dados.message === "Not Found") {
+          setErro(true);
+          setDados({});
+        } else {
+          setErro(false);
+          setDados(dados);
+          console.log(dados);
+        }
       });
   };
 
@@ -30,7 +36,7 @@ function SearchInput({ setDados }) {
         <img
           src={Lupa}
           alt="pesquisar"
-          className="absolute top-0 right-0 h-full rounded-lg bg-[#005CFF] p-4"
+          className="absolute top-0 right-0 h-full rounded-lg bg-[#005CFF] p-4 transition-transform duration-300 hover:scale-105"
         />
       </button>
     </div>

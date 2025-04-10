@@ -1,6 +1,6 @@
 function Card({ dados }) {
   return (
-    <div className="flex h-auto w-xs items-center gap-4 rounded-3xl bg-[#D9D9D9] px-4 py-2 lg:w-2xl lg:gap-8 lg:px-8 lg:py-4">
+    <div className="flex h-auto w-96 items-center gap-4 rounded-3xl bg-[#D9D9D9] px-4 py-2 md:w-lg lg:w-2xl lg:gap-8 lg:px-8 lg:py-4">
       <a
         href={`https://github.com/${dados.login}`}
         target="_blank"

@@ -5,13 +5,15 @@ import { useState } from "react";
 import Card from "../Result Card/card";
 import ErrorCard from "../ErrorCard/ErrorCard";
 import classNames from "classnames";
+import LoadingSkeleton from "../LoadingSkeleton/LoadingSkeleton";
 
 function MainSection() {
   const [dados, setDados] = useState({});
   const [erro, setErro] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   return (
-    <div className="relative mx-4 flex h-[400px] w-xl flex-col items-center bg-[#000000] px-4 lg:h-[500px] lg:w-3xl">
+    <div className="relative mx-4 flex h-[400px] w-xl flex-col items-center bg-[#000000] px-4 md:h-[450px] md:w-2xl lg:h-[500px] lg:w-4xl">
       <div className="absolute top-5 flex items-center gap-1 lg:gap-3">
         <img
           src={LogoGithub}
@@ -34,9 +36,14 @@ function MainSection() {
         />
       </div>
 
-      <SearchInput setDados={setDados} setErro={setErro} />
-      {dados.login && <Card dados={dados} />}
-      {erro && <ErrorCard />}
+      <SearchInput
+        setDados={setDados}
+        setErro={setErro}
+        setLoading={setLoading}
+      />
+      {loading && <LoadingSkeleton />}
+      {!loading && erro && <ErrorCard />}
+      {!loading && dados.login && <Card dados={dados} />}
     </div>
   );
 }

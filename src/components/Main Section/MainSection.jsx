@@ -2,7 +2,7 @@ import LogoGithub from "./assets/logo-github.png";
 import TextoGithub from "./assets/texto-github.png";
 import SearchInput from "../Search Input/SearchInput";
 import { useState } from "react";
-import Card from "../ResultCard/card";
+import Card from "../ResultCard/Card";
 import ErrorCard from "../ErrorCard/ErrorCard";
 import classNames from "classnames";
 import LoadingSkeleton from "../LoadingSkeleton/LoadingSkeleton";

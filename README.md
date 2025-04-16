@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como parte do **processo seletivo do programa de e
 
 🔗 [Acesse o teste técnico](https://ic.penseavanti.com.br/mod/page/view.php?id=51)
 
-🔗[Veja o projeto online(GitHub Pages)](https://github.com/Amanda-Berwig/Avanti--innovation-class/deployments/github-pages)
+🔗[Veja o projeto online(GitHub Pages)](https://amanda-berwig.github.io/busca-github/)
 
 ## 📝 Requisitos para o desenvolvimento
 

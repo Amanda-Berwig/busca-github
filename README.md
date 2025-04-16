@@ -1,12 +1,73 @@
-# React + Vite
+# Projeto - Processo Seletivo Avanti 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte do **processo seletivo do programa de estágio Innovation Class Tech - Desenvolvimento Front-End**.
 
-Currently, two official plugins are available:
+🔗 [Acesse o teste técnico](https://ic.penseavanti.com.br/mod/page/view.php?id=51)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗[Veja o projeto online(GitHub Pages)](https://github.com/Amanda-Berwig/Avanti--innovation-class/deployments/github-pages)
 
-## Expanding the ESLint configuration
+## 📝 Requisitos para o desenvolvimento
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1️⃣ Estruturação
+Desenvolver a aplicação conforme layout do Figma
+🔗 [Layout](https://www.figma.com/proto/DqtFxC6312M32mLt8FpJjq/innovation-class?page-id=22%3A2864&node-id=22-4293&viewport=359%2C115%2C0.25&t=SHsEqEgaMrXGMKwv-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=22%3A4293&show-proto-sidebar=1)
+
+2️⃣ Criar um campo de busca, onde o usuário digita o nome de um perfil do GitHub
+
+3️⃣ Ao clicar no botão de busca, a aplicação deve consumir a API do GitHub e exibir as seguintes informações do usuário, customizando conforme layout do figma:
+
+- Nome do usuário
+- Foto de perfil
+- Bio
+
+4️⃣ Exibir mensagens de erro caso o perfil não seja encontrado
+
+Opcional: Melhorar a experiência do usuário com efeitos visuais e loading durante a requisição.
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- Tailwind CSS
+- API pública do GitHub (consumo via `fetch`) -[API](https://docs.github.com/pt/rest)
+
+---
+
+## 📸 Prints do Projeto
+
+### 💻 Versão Desktop
+
+![Print Desktop](./public/print-desktop.png)
+
+### 🔎 Funcionalidade de Busca Dinâmica
+
+![Demonstração](./public/gifs/busca-perfil.gif)
+
+---
+
+## ▶️ Como executar o projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/Amanda-Berwig/Avanti--innovation-class.git
+```
+
+2. Acesse a pasta do projeto:
+
+```bash
+cd Avanti--innovation-class
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Execute o projeto:
+
+```bash
+npm run dev
+```
+
+5. Abra no navegador: http://localhost:5173

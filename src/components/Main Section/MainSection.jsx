@@ -13,7 +13,7 @@ function MainSection() {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="relative mx-4 flex h-[400px] w-xl flex-col items-center bg-[#000000] px-4 md:w-2xl lg:h-[480px] lg:w-3xl">
+    <div className="relative mx-4 flex h-[400px] w-xl flex-col items-center bg-[#000000] px-4 md:w-2xl lg:h-[480px] lg:w-3xl xl:w-5xl">
       <div className="absolute top-5 flex items-center gap-1 lg:gap-3">
         <img
           src={LogoGithub}

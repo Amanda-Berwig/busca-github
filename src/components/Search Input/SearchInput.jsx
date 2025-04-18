@@ -52,7 +52,7 @@ function SearchInput({ setDados, setErro, setLoading }) {
         {usuario && (
           <button
             onClick={limparCampo}
-            className="absolute top-1/2 right-16 -translate-y-1/2 cursor-pointer text-xl font-bold text-gray-500 hover:text-gray-700"
+            className="absolute top-1/2 right-18 -translate-y-1/2 cursor-pointer text-xl font-bold text-gray-500 hover:text-gray-700"
             title="Limpar campo"
           >
             ×

@@ -3,7 +3,7 @@ import classNames from "classnames";
 import LogoGithub from "./assets/logo-github.png";
 import TextoGithub from "./assets/texto-github.png";
 import SearchInput from "../Search Input/SearchInput";
-import Card from "../ResultCard/Card";
+import Card from "../ResultCard/ResultCard";
 import ErrorCard from "../ErrorCard/ErrorCard";
 import LoadingSkeleton from "../LoadingSkeleton/LoadingSkeleton";
 

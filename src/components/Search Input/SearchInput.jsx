@@ -33,6 +33,7 @@ function SearchInput({ setDados, setErro, setLoading }) {
         placeholder="Digite um usuário do Github"
         value={usuario}
         onChange={(e) => setUsuario(e.target.value)}
+        onKeyDown={(e) => e.key === "Enter" && buscarDados()}
         className="w-full rounded-lg bg-[#DDDDDD] p-4 text-base font-semibold placeholder-[#000000] lg:text-xl"
       />
       <button onClick={buscarDados}>
